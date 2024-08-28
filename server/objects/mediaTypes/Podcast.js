@@ -17,7 +17,7 @@ class Podcast {
     this.autoDownloadSchedule = null
     this.lastEpisodeCheck = 0
     this.maxEpisodesToKeep = 0
-    this.maxNewEpisodesToDownload = 3
+    this.maxNewEpisodesToDownload = 0
 
     this.lastCoverSearch = null
     this.lastCoverSearchQuery = null
@@ -45,7 +45,7 @@ class Podcast {
 
     // Default is 3 but 0 is allowed
     if (typeof podcast.maxNewEpisodesToDownload !== 'number') {
-      this.maxNewEpisodesToDownload = 3
+      this.maxNewEpisodesToDownload = 0
     } else {
       this.maxNewEpisodesToDownload = podcast.maxNewEpisodesToDownload
     }

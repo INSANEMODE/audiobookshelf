@@ -56,7 +56,7 @@ export default {
     return {
       checkingNewEpisodes: false,
       lastEpisodeCheckInput: null,
-      maxEpisodesToDownload: 3
+      maxEpisodesToDownload: 0
     }
   },
   watch: {
@@ -98,7 +98,7 @@ export default {
       }
 
       if (this.maxEpisodesToDownload < 0) {
-        this.maxEpisodesToDownload = 3
+        this.maxEpisodesToDownload = 0
         this.$toast.error('Invalid max episodes to download')
         return
       }

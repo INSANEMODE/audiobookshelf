@@ -180,7 +180,7 @@ function migratePodcast(oldLibraryItem, LibraryItem) {
     autoDownloadSchedule: oldPodcast.autoDownloadSchedule,
     lastEpisodeCheck: oldPodcast.lastEpisodeCheck,
     maxEpisodesToKeep: oldPodcast.maxEpisodesToKeep || 0,
-    maxNewEpisodesToDownload: oldPodcast.maxNewEpisodesToDownload || 3,
+    maxNewEpisodesToDownload: oldPodcast.maxNewEpisodesToDownload || 0,
     lastCoverSearchQuery: oldPodcast.lastCoverSearchQuery,
     lastCoverSearch: oldPodcast.lastCoverSearch,
     createdAt: LibraryItem.createdAt,

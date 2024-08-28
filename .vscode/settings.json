@@ -14,7 +14,7 @@
       "sortAttributes": false
     }
   },
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.detectIndentation": true,
   "editor.tabSize": 2,
   "javascript.format.semicolons": "remove",
@@ -23,5 +23,10 @@
   },
   "[vue]": {
     "editor.defaultFormatter": "octref.vetur"
-  }
+  },
+  "prettier.enable": true,
+  "editor.codeActionsOnSave": {
+
+  },
+  "editor.formatOnSaveMode": "modifications"
 }

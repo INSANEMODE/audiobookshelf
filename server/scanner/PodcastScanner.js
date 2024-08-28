@@ -282,7 +282,7 @@ class PodcastScanner {
       autoDownloadSchedule: '0 * * * *',
       lastEpisodeCheck: 0,
       maxEpisodesToKeep: 0,
-      maxNewEpisodesToDownload: 3,
+      maxNewEpisodesToDownload: 0,
       podcastEpisodes: newPodcastEpisodes
     }
 
