@@ -67,9 +67,9 @@ jobs:
           password: ${{ secrets.GHCR_PASSWORD }}
 
       - name: Build image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v6
         with:
-          tags: ${{ github.event.inputs.tags || steps.meta.outputs.tags }}
+          tags: ${{ github.event.inputs.tags && format('ghcr.io/{0}/audiobookshelf:{1}', github.repository_owner, github.event.inputs.tags) || steps.meta.outputs.tags }}
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
