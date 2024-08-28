@@ -9,7 +9,7 @@ on:
       tags:
         description: 'Docker Tag'
         required: true
-        default: 'latest'
+        default: 'edge'
   push:
     branches: [main,master,episode-download-defaults-testing]
     tags:
