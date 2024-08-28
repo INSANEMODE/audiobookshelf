@@ -34,7 +34,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: INSANEMODE/audiobookshelf,ghcr.io/${{ github.repository_owner }}/audiobookshelf
+          images: ghcr.io/${{ github.repository_owner }}/audiobookshelf
           tags: |
             type=edge,branch=episode-download-defaults-testing
             type=semver,pattern={{version}}
